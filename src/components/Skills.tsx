@@ -3,12 +3,12 @@ import React from 'react';
 import { Card, CardContent } from "@/components/ui/card";
 import { Progress } from "@/components/ui/progress";
 import { 
-  Html, 
-  Css, 
-  Javascript, 
-  Database, 
+  Code, 
   FileCode, 
-  Server
+  FileJson, 
+  Database, 
+  Server,
+  Laptop
 } from "lucide-react";
 
 interface Skill {
@@ -20,9 +20,9 @@ interface Skill {
 
 const Skills = () => {
   const skills: Skill[] = [
-    { name: 'HTML', level: 90, icon: Html, category: 'frontend' },
-    { name: 'CSS', level: 85, icon: Css, category: 'frontend' },
-    { name: 'JavaScript', level: 80, icon: Javascript, category: 'frontend' },
+    { name: 'HTML', level: 90, icon: Code, category: 'frontend' },
+    { name: 'CSS', level: 85, icon: FileCode, category: 'frontend' },
+    { name: 'JavaScript', level: 80, icon: FileJson, category: 'frontend' },
     { name: 'SQL', level: 75, icon: Database, category: 'backend' },
     { name: 'C++', level: 70, icon: FileCode, category: 'backend' },
     { name: 'Docker', level: 60, icon: Server, category: 'other' },
